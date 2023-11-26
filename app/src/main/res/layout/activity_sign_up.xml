@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#E5E5E5"
+    android:paddingTop="121dp"
+    android:paddingBottom="49dp"
+    android:paddingHorizontal="30dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Daftar"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="Nama lengkap"
+                android:background="@drawable/custom_input"
+                android:paddingHorizontal="20dp"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:textColor="#8A8A8A"
+                />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:background="@drawable/custom_input"
+                android:paddingHorizontal="20dp"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textColor="#8A8A8A"
+                />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="Kata sandi"
+                android:background="@drawable/custom_input"
+                android:paddingHorizontal="20dp"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textColor="#8A8A8A"
+                />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="Konfirmasi kata sandi"
+                android:background="@drawable/custom_input"
+                android:paddingHorizontal="20dp"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textColor="#8A8A8A"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLoginIntro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:backgroundTint="#5F1854"
+                android:text="Daftar"
+                android:textSize="18sp"
+                app:cornerRadius="0dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
