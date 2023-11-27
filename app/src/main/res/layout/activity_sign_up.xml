@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".activity.LoginActivity"
     android:background="#E5E5E5"
-    android:paddingTop="121dp"
+    android:paddingTop="50dp"
     android:paddingBottom="49dp"
     android:paddingHorizontal="30dp">
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +16,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textLogin"
+            android:id="@+id/titleSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_bold"
@@ -25,7 +24,6 @@
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="32sp"
-
             android:textStyle="bold" />
 
         <LinearLayout
@@ -34,62 +32,119 @@
             android:orientation="vertical"
             >
 
-
             <EditText
-                android:id="@+id/editTextEmail"
+                android:id="@+id/PersonName"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_input"
                 android:ems="10"
-                android:inputType="textEmailAddress"
                 android:hint="Nama lengkap"
-                android:background="@drawable/custom_input"
+                android:inputType="textPersonName"
                 android:paddingHorizontal="20dp"
-                android:textSize="18sp"
-                android:layout_marginTop="50dp"
                 android:textColor="#8A8A8A"
-                />
+                android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/editTextEmail"
+                android:id="@+id/Gender"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
                 android:ems="10"
-                android:inputType="textEmailAddress"
+                android:hint="Jenis kelamin"
+                android:inputType="textShortMessage"
+                android:paddingHorizontal="20dp"
+                android:textColor="#8A8A8A"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/DateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Tanggal lahir"
+                android:inputType="textShortMessage"
+                android:paddingHorizontal="20dp"
+                android:textColor="#8A8A8A"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/Address"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Alamat"
+                android:inputType="textShortMessage"
+                android:paddingHorizontal="20dp"
+                android:textColor="#8A8A8A"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/PhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Nomor telepon"
+                android:inputType="phone"
+                android:paddingHorizontal="20dp"
+                android:textColor="#8A8A8A"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/EmailSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
                 android:hint="Email"
-                android:background="@drawable/custom_input"
-                android:paddingHorizontal="20dp"
-                android:textSize="18sp"
-                android:layout_marginTop="15dp"
-                android:textColor="#8A8A8A"
-                />
-
-            <EditText
-                android:id="@+id/editTextEmail"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:ems="10"
                 android:inputType="textEmailAddress"
-                android:hint="Kata sandi"
-                android:background="@drawable/custom_input"
                 android:paddingHorizontal="20dp"
-                android:textSize="18sp"
-                android:layout_marginTop="15dp"
                 android:textColor="#8A8A8A"
-                />
+                android:textSize="18sp" />
 
-            <EditText
-                android:id="@+id/editTextEmail"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:ems="10"
-                android:inputType="textEmailAddress"
-                android:hint="Konfirmasi kata sandi"
-                android:background="@drawable/custom_input"
-                android:paddingHorizontal="20dp"
-                android:textSize="18sp"
-                android:layout_marginTop="15dp"
-                android:textColor="#8A8A8A"
-                />
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/PasswordSignUp"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_input"
+                    android:hint="Kata sandi"
+                    android:inputType="textPassword"
+                    android:paddingHorizontal="20dp"
+                    android:textColor="#8A8A8A"
+                    android:textSize="18sp"
+                    tools:ignore="Suspicious0dp" />
+
+                <EditText
+                    android:id="@+id/ConfirmPass"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_input"
+                    android:hint="Konfirmasi kata sandi"
+                    android:inputType="textPassword"
+                    android:paddingHorizontal="20dp"
+                    android:textColor="#8A8A8A"
+                    android:textSize="18sp"
+                    tools:ignore="Suspicious0dp" />
+
+            </LinearLayout>
 
 
         </LinearLayout>
@@ -100,15 +155,37 @@
             android:orientation="vertical">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnLoginIntro"
+                android:id="@+id/btnSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="30dp"
                 android:backgroundTint="#5F1854"
+                android:minHeight="48dp"
                 android:text="Daftar"
                 android:textSize="18sp"
-                app:cornerRadius="0dp"/>
+                app:cornerRadius="0dp" />
 
+            <TextView
+                android:id="@+id/HaveAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sudah Punya Akun?"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/ToLoginPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:onClick="goToLoginPage"
+                android:text="Masuk Sekarang"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 
