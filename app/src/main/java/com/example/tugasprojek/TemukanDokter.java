@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.TextView;
+
+import com.example.tugasprojek.activity.SignUpActivity;
 
 public class TemukanDokter extends AppCompatActivity {
 
@@ -19,7 +20,7 @@ public class TemukanDokter extends AppCompatActivity {
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(TemukanDokter.this, com.example.tugasprojek.SignUpActivity.class));
+                startActivity(new Intent(TemukanDokter.this, SignUpActivity.class));
             }
         });
     }
