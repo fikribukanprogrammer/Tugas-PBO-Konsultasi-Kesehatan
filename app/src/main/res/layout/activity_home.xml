@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="10dp"
+    android:paddingBottom="15dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
     android:background="#E5E5E5"
-    tools:context=".HomeActivity">
+    tools:context=".activity.HomeActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="50dp"
-        android:paddingStart="27dp">
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -30,7 +32,8 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Temukan Dokter"
                     android:textColor="@color/black"
-                    android:textSize="32sp" />
+                    android:textSize="32sp"
+                    android:paddingTop="50dp"/>
 
                 <TextView
                     android:layout_width="match_parent"

@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
-        String url = "http://172.20.10.4:8080/api/v1/user/login";
+        String url = "http://192.168.5.35:8080/api/v1/user/login";
 
         //set parameters
         HashMap<String, String> params = new HashMap<String, String>();
