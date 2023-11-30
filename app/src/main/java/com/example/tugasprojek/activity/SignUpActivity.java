@@ -47,12 +47,9 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 processFormFields();
-
             }
         });
-
     }
-
 
     public void processFormFields(){
         if(!validatePersonName() || !validateGender() || !validateDateofBirth()|| !validateAddress() || !validatePhoneNumber() || !validateEmail() || !validatePasswordandConfirm()){
@@ -60,7 +57,7 @@ public class SignUpActivity extends AppCompatActivity {
         }
 
         RequestQueue queue = Volley.newRequestQueue(SignUpActivity.this);
-        String url = "http://172.20.10.4:8080/api/v1/user/signup";
+        String url = "http://192.168.5.35:8080/api/v1/user/signup";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

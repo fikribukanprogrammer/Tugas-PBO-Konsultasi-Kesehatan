@@ -9,17 +9,23 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Doktify"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TugasProjek"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".TemukanDokter"
+            android:name=".activity.SuccessReservationActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".activity.ConsultationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.JadwalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HomeActivity"
             android:exported="false" />
         <activity
             android:name=".activity.ProfileActivity"

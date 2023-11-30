@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.tugasprojek.HomeActivity;
 import com.example.tugasprojek.R;
 
 public class ProfileActivity extends AppCompatActivity {

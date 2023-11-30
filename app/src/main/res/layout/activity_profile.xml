@@ -32,53 +32,143 @@
             android:orientation="vertical"
             >
 
-            <TextView
-                android:id="@+id/nama_lengkap"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="50dp"
-                android:textSize="22sp"
-                tools:layout_editor_absoluteX = "0dp"/>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp">
 
-            <TextView
-                android:id="@+id/jenis_kelamin"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:textSize="22sp"
-                tools:layout_editor_absoluteX = "0dp"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/name"
+                    android:layout_marginEnd="5dp"/>
 
-            <TextView
-                android:id="@+id/tanggal_lahir"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:textSize="22sp"
-                tools:layout_editor_absoluteX = "0dp"/>
+                <TextView
+                    android:id="@+id/nama_lengkap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="3dp"
+                    tools:layout_editor_absoluteX = "0dp"/>
 
-            <TextView
-                android:id="@+id/alamat"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:textSize="22sp"
-                tools:layout_editor_absoluteX = "0dp"/>
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/nomor_hp"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:textSize="22sp"
-                tools:layout_editor_absoluteX = "0dp"/>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
 
-            <TextView
-                android:id="@+id/email"
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/gender"
+                    android:layout_marginEnd="5dp"/>
+
+                <TextView
+                    android:id="@+id/jenis_kelamin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="3dp"
+                    tools:layout_editor_absoluteX = "0dp"/>
+
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:textSize="22sp"
-                tools:layout_editor_absoluteX = "0dp"/>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+                    android:src="@drawable/birthdate"
+                    android:layout_marginEnd="5dp"/>
+
+                <TextView
+                    android:id="@+id/tanggal_lahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="3dp"
+                    tools:layout_editor_absoluteX = "0dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+                    android:src="@drawable/address"
+                    android:layout_marginEnd="5dp"/>
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="3dp"
+                    tools:layout_editor_absoluteX = "0dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+                    android:src="@drawable/telephone"
+                    android:layout_marginEnd="5dp"/>
+
+                <TextView
+                    android:id="@+id/nomor_hp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="3dp"
+                    tools:layout_editor_absoluteX = "0dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+                    android:src="@drawable/email"
+                    android:layout_marginEnd="5dp"/>
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="3dp"
+                    tools:layout_editor_absoluteX = "0dp"/>
+
+            </LinearLayout>
 
 
         </LinearLayout>
